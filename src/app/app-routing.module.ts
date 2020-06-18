@@ -11,10 +11,13 @@ import { DishTypeComponent } from './dish-type/dish-type.component';
 import { AddDishTypeComponent } from './add-dish-type/add-dish-type.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { ReservationsComponent } from './reservations/reservations.component';
+import { AddDishComponent } from './add-dish/add-dish.component';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
+  { path: 'empl', component: HomeComponent},
   { path: 'dashboard', component: DashboardComponent},
   { path: 'dishes', component: DishesComponent},
   { path: 'reservation', component: ReservationComponent},
@@ -24,7 +27,9 @@ const routes: Routes = [
   { path: 'dishtype', component: DishTypeComponent},
   { path: 'adddishtype', component: AddDishTypeComponent},
   { path: 'addemployee', component: AddEmployeeComponent},
-  { path: 'reservations', component: ReservationsComponent}
+  { path: 'reservations', component: ReservationsComponent},
+  { path: 'adddish', component: AddDishComponent},
+  { path: 'login', component: LoginComponent}
 ];
 
 @NgModule({

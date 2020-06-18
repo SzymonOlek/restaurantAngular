@@ -33,6 +33,8 @@ import { AddDishTypeComponent } from './add-dish-type/add-dish-type.component';
 import { FormsModule } from '@angular/forms';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { ReservationsComponent } from './reservations/reservations.component';
+import { AddDishComponent } from './add-dish/add-dish.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { ReservationsComponent } from './reservations/reservations.component';
     DishTypeComponent,
     AddDishTypeComponent,
     AddEmployeeComponent,
-    ReservationsComponent
+    ReservationsComponent,
+    AddDishComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

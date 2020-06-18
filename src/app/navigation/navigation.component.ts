@@ -24,7 +24,7 @@ export class NavigationComponent {
 
     setTimeout(() => {
       this.logged = true;
- }, 1000);
+ }, 500);
 
   }
 
