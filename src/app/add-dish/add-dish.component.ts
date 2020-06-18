@@ -20,7 +20,7 @@ export class AddDishComponent implements OnInit {
   add() {
     console.log(this.newDish);
     this.serviceDishe.addDish(this.newDish);
-    // this.newDish =  new Dish();
+    this.newDish =  new Dish();
   }
 
   reset() {
