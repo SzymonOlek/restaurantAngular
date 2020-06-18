@@ -1,0 +1,18 @@
+
+  <div class="formula">
+    Enter Your Name:
+    <input placeholder="Name" [(ngModel)]='newReservation.name'>
+   <br/> Enter Your Phone Number:
+    <input placeholder="Phone Number" [(ngModel)]='newReservation.phone_number'>
+    <div>
+
+
+
+    <br/><p>Choose Data to Reserve?</p>
+    <p>Between 2020-01-01 - 2026-12-31</p>
+    
+    <input  type="date" placeholder="when"  min="2020-01-01" max="2026-12-31" [(ngModel)]='newReservation.date'>
+    <button (click)='add()'>Add</button>
+    <button (click)='reset()'>Reset</button>
+    
+    </div>

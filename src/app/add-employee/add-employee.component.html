@@ -1,0 +1,15 @@
+
+  <div class="formula">
+    <input placeholder="Name" [(ngModel)]='newEmployee.name'>
+    <input placeholder="Surname" [(ngModel)]='newEmployee.surname'>
+    <input placeholder="Username" [(ngModel)]='newEmployee.username'>
+    <input placeholder="Password" [(ngModel)]='newEmployee.password'>
+
+    <input placeholder="Restaurant" [(ngModel)]='newEmployee.restaurant'>
+    <br/>ROLE <br/> (ADMIN / MANAGER / EMPLOYEE)
+    <input placeholder="Role" [(ngModel)]='newEmployee.role'>
+  <div>
+
+    <button (click)='add()'>Add</button>
+    <button (click)='reset()'>Reset</button>
+    </div>

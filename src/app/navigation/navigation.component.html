@@ -1,0 +1,53 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="'over'"
+      [opened]="'false'">
+    <mat-toolbar>Panel Employee</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="''">HOME</a>
+      <a mat-list-item [routerLink]="'reservation'">Add Reservation</a>
+      <!-- <a mat-list-item [routerLink]="'dashboard'">Dashboard</a> -->
+      <a mat-list-item [routerLink]="'reservations'">Rezerwacje</a>
+      <a mat-list-item [routerLink]="'employee'">Employee</a>
+      <a mat-list-item [routerLink]="'storeroom'">Storeroom</a>
+      <a mat-list-item [routerLink]="'bills'">Bills</a>
+      <a mat-list-item [routerLink]="'dishtype'">Dish Type</a>
+      <a mat-list-item [routerLink]="'adddishtype'">Add Dish Type</a>
+      <a mat-list-item [routerLink]="'addemployee'">Add Employee</a>
+      
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <!-- <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button> -->
+        
+      <span>Welcome in our restaurant   </span>
+      <pre>         </pre>
+      <span mat-list-item [routerLink]="''">Home</span>
+      <pre>         </pre>
+      <span mat-list-item [routerLink]="'dishes'">Dishes</span>
+      <pre>         </pre>
+      <span [routerLink]="'reservation'"> New Reservation</span>
+      <pre>         </pre>
+      
+      <pre>                                                                                                                                                                                                  </pre>
+      <span *ngIf="logged==true; else elseBlock" (click)="drawer.toggle()" >
+        Panel Employee</span>
+      <ng-template #elseBlock ><span (click)="changedLogged()">
+        <a href="http://localhost:8080/login" target="_blank" id='logEmployee'>Employee Log</a></span></ng-template>
+
+
+    </mat-toolbar>
+
+      <router-outlet></router-outlet>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
